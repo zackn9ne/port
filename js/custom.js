@@ -540,3 +540,10 @@ Firefox anchor fix
 
     }
     });
+
+
+$('.magness-cta').click(function(){
+	console.log(this + 'was clicked');
+	$('#magness').css('height','2744px');
+}
+);

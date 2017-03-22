@@ -332,6 +332,9 @@ ul.fullwidth-slider, ul.fullwidth-slider .caption-inside {
     width: 100%;
     height: 100%;
     position: relative;
+	background: url(../img/slider/bx1.jpg) no-repeat top center;
+	background-size: cover;
+
 }
 
 #slider_left i, #slider_right i, .bx-prev i, .bx-next i {
@@ -2630,3 +2633,7 @@ ul.social {
     background: #2eaef0;
 }
 
+#magness {
+	height: 300px;
+	overflow: hidden;
+}
