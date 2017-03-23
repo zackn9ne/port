@@ -1827,6 +1827,7 @@ div.content-box.big div.content-box-info p {
 
 .footer-wrap {
     background: #252C34;
+	padding: 1em; 
 }
 
 .social-icons-footer-bottom a {
@@ -2638,5 +2639,8 @@ ul.social {
 	overflow: hidden;
 }
 #magness.open {
-	height: 3277px;
+	height: 2277px;
+}
+.cta-row {
+	margin: 2em 0
 }

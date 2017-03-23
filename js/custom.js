@@ -546,9 +546,16 @@ $('.magness-cta').click(function(){
 
 	console.log(this + 'was clicked');
 
-($(this).is(':visible')? 'I\'m done reading more' : 'Read more')
+// ($(this).is(':visible')? 'I\'m done reading more' : 'Read more')
 
-	$(this).html('hide case');
+//	$(this).html('hide case');
+
+		if ($(this).text() == "hide case") {
+            $(this).text("view case");
+        }
+        else {
+            $(this).text("hide case");
+        }
 	$('#magness').toggleClass('open');
 }
 );

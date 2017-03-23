@@ -45,38 +45,46 @@
 	    </div>
 	    <button class="btn magness-cta btn-1 wow fadeInRight animated" 
 >View Case</button>
-	    <div class="row">
-	      <div class="col-md-4 wow fadeInLeft">
-		<div class="fun-box">
-		  <i class="fa fa-clock-o"></i>
-		  <span class="fun" data-from="0" data-to="4555" data-speed="5000" data-refresh-interval="50"></span>
-		  <p>Responsive Design</p>
-		</div>
-	      </div>
-
-	      <div class="col-md-4 wow fadeInDown">
-		<div class="fun-box">
-		  <i class="fa fa-users"></i>
-		  <span class="fun" data-from="0" data-to="101" data-speed="5000" data-refresh-interval="50"></span>
-		  <p>Database Driven</p>
-		</div>
-	      </div>
-
-
-	      <div class="col-md-4 wow fadeInRight">
-		<div class="fun-box">
-		  <i class="fa fa-trophy"></i>
-		  <span class="fun" data-from="0" data-to="49" data-speed="5000" data-refresh-interval="50"></span>
-		  <p>Portfolio Site</p>
-		</div>
-	      </div>
-	    </div>
 
 
 	  </div>
 	</div>
 
-<img src="img/Showcase-Template-Flat-Presentation-Vol-2.png">
+	<div class="row">
+		<img src="img/Showcase-Template-Flat-Presentation-Vol-2_mine.png">
+	</div>
+
+	<div class="row">
+
+      <div class="col-md-4 wow fadeInRight">
+		<div class="fun-box">
+		  <i class="fa fa-shirtsinbulk"></i>
+		  <span class="fun" data-from="0" data-to="49" data-speed="5000" data-refresh-interval="50"></span>
+		  <p>Bespoke Site</p>
+		</div>
+      </div>
+
+      <div class="col-md-4 wow fadeInRight">
+		<div class="fun-box">
+		  <i class="fa fa-heart"></i>
+		  <span class="fun" data-from="0" data-to="49" data-speed="5000" data-refresh-interval="50"></span>
+		  <p>Positive Customer Review</p>
+		</div>
+      </div>
+
+      <div class="col-md-4 wow fadeInDown">
+		<div class="fun-box">
+		  <i class="fa fa-clock-o"></i>
+		  <span class="fun" data-from="0" data-to="4555" data-speed="5000" data-refresh-interval="50"></span>
+		  <p>Responsive Design</p>
+		</div>
+      </div>
+	</div>
+
+		<div class="row cta-row">
+	    	<button class="btn magness-cta-pricing btn-1 wow fadeInRight 
+animated">View Pricing</button>
+		</div>
 
 
       </div>
