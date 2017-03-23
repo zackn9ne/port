@@ -543,7 +543,12 @@ Firefox anchor fix
 
 
 $('.magness-cta').click(function(){
+
 	console.log(this + 'was clicked');
-	$('#magness').css('height','2744px');
+
+($(this).is(':visible')? 'I\'m done reading more' : 'Read more')
+
+	$(this).html('hide case');
+	$('#magness').toggleClass('open');
 }
 );
