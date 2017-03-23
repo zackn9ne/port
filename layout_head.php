@@ -57,7 +57,7 @@
 		<div class="col-md-2 mob-logo">
 		  <div class="row">
 		    <div class="site-logo">
-		      <a href="index.php"><img src="img/zack_levinebrand.png"></a>
+		      <a href="index"><img src="img/zack_levinebrand.png"></a>
 		    </div>
 		  </div>
 		</div>
@@ -74,8 +74,8 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="menu">
 		      <ul class="nav navbar-nav navbar-right">
-			<li><a href="index.php">Home</a></li>
-			<li><a href="clients.php">Clients</a></li>
+			<li><a href="index">Home</a></li>
+			<li><a href="clients">Clients</a></li>
 			<li><a href="http://yo.hellozach.co" target="_blank">Support</a></li>
 			<li><a href="https://m.do.co/c/dc41b2580969" target="_blank">Hosting</a></li>
 
