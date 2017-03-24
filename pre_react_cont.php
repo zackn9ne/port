@@ -82,8 +82,7 @@
 	</div>
 
 		<div class="row cta-row">
-	    	<button class="btn magness-cta-pricing btn-1 wow fadeInRight 
-animated">View Pricing</button>
+	    	<a href="pricing"><button class="btn magness-cta-pricing btn-1 wow fadeInRight animated">View Pricing</button></a>
 		</div>
 
 

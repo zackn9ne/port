@@ -2642,5 +2642,34 @@ ul.social {
 	height: 2277px;
 }
 .cta-row {
-	margin: 2em 0
+	margin: 2em 0;
+	text-align: center;
 }
+.container.pricing-section .fun-box i, container.pricing-section .fun-box span.fun, .container.pricing-section div.fun-box p, .container.pricing-section .big-title h2 {
+	color: #566473 !important;
+}
+
+.plan li.plan-name {
+	background: #2eaef0;
+    padding: 10px 15px;
+    color: #566473;
+  	font-size: 22px;
+  	line-height: 22px;
+  	margin-bottom: 30px;
+  	border-top: 0;
+  	font-family: "Raleway", Helvetica, Arial;
+}
+
+.plan {
+    list-style: none;
+    padding: 0 0 20px;
+    margin: 0 0 15px;
+    background: #fff;
+    text-align: center;
+
+}
+.cta-major {
+	font-size: 2em;
+	letter-spacing: -1px;
+}
+
