@@ -1,25 +1,18 @@
 
 	<!-- Fullscreen Slider -->
 	<div class="slider-container">
-	  <div id="fullscreen-slider">
 
 	    <!-- Title row -->
 	    <div class="row">
 
-	      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInLeft big-title wow bounceIn">
+	      <div class="align-center col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInLeft big-title wow bounceIn">
 
-		  <div class="slide-content light">
-		    <div class="align-center">
 		      <p class="welcome"><img src="img/zack_levinebrand.png"></p>
 
-		    </div>
-		  </div>
 		</div>
 
-	      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow ">
+	      <div class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 wow ">
 		<h1 class="promo">Web Developer</h1>
-	      </div>
-	    </div>
 	  </div>
 	  <!-- /Full Screen Slider -->
 
@@ -36,15 +29,13 @@
       <!-- /Agency team -->
 
       <!-- Project of the day -->
-      <div id="magness" class="quote-wrap light">
+      <div id="magness" class="open quote-wrap light">
 	<div class="texture-layer">
 	  <div class="container">
 
 	    <div class="col-md-12 big-title light wow bounceIn">
 	      <h2>Project of The Day</h2>
 	    </div>
-	    <button class="btn magness-cta btn-1 wow fadeInRight animated" 
->View Case</button>
 
 
 	  </div>
@@ -81,12 +72,21 @@
       </div>
 	</div>
 
-		<div class="row cta-row">
-	    	<a href="pricing"><button class="btn magness-cta-pricing btn-1 wow fadeInRight animated">View Pricing</button></a>
-		</div>
 
+	<div class="row">
+		<div class="card-form">
+<label class="card-form__label centered" for="email">Enter your email address to <br> start a free 30 day trial:</label>
+	  <form method="post" class="reply-from-homepage" id="contact" action="">
+	    <fieldset>
+		      <input class="form-control" type="email" id="email" name="email" placeholder="Email" value="" required>
+		  <button type="submit" class="btn btn-2 btn-2c">Sign Up</button>
+		  <div class="success alert-success alert" style="display:none">Your message has been sent successfully.</div>
+		  <div class="error alert-danger alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
+	      </div>
+	    </fieldset>
+	  </form>
+	</div>
 
-      </div>
 
 
 
@@ -103,10 +103,6 @@
 
     <div class="clearfix"></div>
 
-    <div class="col-md-12 sub-title text-center wow slideInRight">
-      <h3>More people will pay you money to help them achieve a monetary goal than will pay you to give them something pretty to look at!</h3>
-    </div>
-  </div>
   <!-- /Title row -->
 
   <!-- Portfolio Filters -->   

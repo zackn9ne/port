@@ -1,25 +1,10 @@
 jQuery(document).ready(function () {
 
-    
-    jQuery.waitForImages.hasImgProperties = ['background','backgroundImage'];
-    jQuery('body').waitForImages(function() {
-        jQuery(".page-mask").delay(1200).fadeOut('slow');
-        jQuery('body').css('overflowY','auto');
-    });
-
 
 /*-------------------------------------------------*/
 /* =  Animated content
 /*-------------------------------------------------*/
 
-    wow = new WOW(
-        {
-            animateClass: 'animated',
-            offset:       100
-        }
-    );
-
-    wow.init();
 
 /*==========================*/
 /* Sticky Navigation
@@ -28,15 +13,6 @@ jQuery(document).ready(function () {
     jQuery("#navigation").sticky({topSpacing:0});
 
     
-/*==========================*/
-/* Video Background Overlay
-/*==========================*/
-
-    var winheight = jQuery(window).height();
-
-    jQuery(".video-overlay").css( "height", winheight );
-
-
 /* ==============================================
 Drop Down Menu Fade Effect
 =============================================== */  
@@ -88,58 +64,6 @@ Drop Down Menu Fade Effect
 
 
     
-
-/*==========================*/
-/* FullScreen Slider
-/*==========================*/
-
-    jQuery(function (){
-        jQuery('#fullscreen-slider').maximage({
-            cycleOptions: {
-                fx: 'fade',
-                speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-                timeout: 0,
-                prev: '#slider_left',
-                next: '#slider_right',
-                pause: 1,
-                before: function(last,current){
-                    jQuery('.slide-content').fadeOut().animate({top:'500px'},{queue:false, easing: 'easeOutQuad', duration: 750});
-                    jQuery('.slide-content').fadeOut().animate({top:'-500px'});
-                },
-                after: function(last,current){
-                    jQuery('.slide-content').fadeIn().animate({top:'0'},{queue:false, easing: 'easeOutQuad', duration: 650});
-                }   
-                
-                
-                        
-            },
-            
-            
-            
-            onFirstImageLoaded: function(){
-                //jQuery('#cycle-loader').delay(1000).hide();
-                jQuery('#fullscreen-slider').delay(1000).fadeIn('slow');
-                jQuery('.slide-content').fadeIn().animate({top:'0'});
-                jQuery('.slide-content a').bind('click',function(event){
-                    var $anchor = jQuery(this);              
-                    jQuery('html, body').stop().animate({
-                    scrollTop: jQuery($anchor.attr('href')).offset().top -44
-                    }, 1500,'easeInOutExpo');               
-                    event.preventDefault();
-                    });         
-            }
-        });
-
-        // Helper function to Fill and Center the HTML5 Video
-        jQuery('video,object').maximage('maxcover');
-        
-        
-        
-        
-
-        // To show it is dynamic html text
-        
-    });
 
 
     
@@ -286,52 +210,8 @@ Drop Down Menu Fade Effect
     });
 
 
-/*----------------------------------------------------*/
-/*  Jquery Google map Section
-/*----------------------------------------------------*/
-        
-    //Google map
-    jQuery('#maps').gMap({
-        address: "House: 325, Road: 2, Mirpur DOHS, Dhaka, Bangladesh",
-        zoom: 16,
-        controls: {
-         panControl: true,
-         zoomControl: true,
-         mapTypeControl: true,
-         scaleControl: true,
-         streetViewControl: true,
-         overviewMapControl: true
-     },
-        markers: [{
-            latitude: 23.835369,
-            longitude: 90.367172,
-            html: "<h4>FIFO Themes</h4>Wordpress, HTML5/CSS Themes",
-            popup: true
-        }]
-    });
 
 
-
-
-/*===============================================*/
-/*  Video Script
-/*===============================================*/
-
-    jQuery(function(){
-        jQuery(".player").mb_YTPlayer();
-    }); 
-
-
-/*----------------------------------------------------*/
-/*  Carousel Section
-/*----------------------------------------------------*/
-
-    
-    jQuery('.testimonials-carousel').carousel({interval: false, wrap: false});   
-    
-    jQuery('.testimonials-carousel-widget').carousel({interval: 5000, pause: "hover"});
-
-});
 
 
 
@@ -438,72 +318,23 @@ Drop Down Menu Fade Effect
 /*----------------------------------------------------*/
 
 
-jQuery(document).ready(function(){
-    
-    var onMobile = false;
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) { onMobile = true; }
-    
-    jQuery('.fullwidth-slider').bxSlider({
-        mode: "fade",
-        speed: 1000,
-        pager: false,
-        nextText: '<i class="fa fa-angle-right"></i>',
-        prevText: '<i class="fa fa-angle-left"></i>', 
-        
-        onSlideBefore: function($slideElement) {
-            ($slideElement).find('.slide-caption').fadeOut().animate({top:'100px'},{queue:false, easing: 'easeOutQuad', duration: 550});
-            ($slideElement).find('.slide-caption').hide().animate({top:'-100px'});
-        },
-        onSlideAfter: function($slideElement) {
-            ($slideElement).find('.slide-caption').fadeIn().animate({top:'0'},{queue:false, easing: 'easeOutQuad', duration: 450});
-        },
-        
-    });
-    
-    jQuery('.bx-wrapper .bx-controls-direction a').attr('data-500','top:83%; opacity: 0;').attr('data-start','top:50%; opacity: 1;');
-    
-    
-    if( ( onMobile === false ) && ( jQuery('.parallax-slider').length ) ) {
-    
-        skrollr.init({
-            edgeStrategy: 'set',
-            smoothScrolling: false,
-            forceHeight: false
-        });
-        
-    }
-
-
-    jQuery('.text-slide').bxSlider({
-        controls: false,
-        adaptiveHeight: true, 
-        pager: false,       
-        auto:true,
-        mode:'fade',
-        pause: 3000,
-    });   
-
-    
-});  
 
 /*----------------------------------------------------*/
 /*  Contact Form Section
 /*----------------------------------------------------*/
     $("#contact").submit(function (e) {
         e.preventDefault();
-        var name = $("#name").val();
         var email = $("#email").val();
-        var subject = $("#subject").val();
-        var text = $("#text").val();
-        var dataString = 'name=' + name + '&email=' + email + '&subject=' + subject + '&text=' + text;
-        
+		var clicked = $(this).attr('class');
+        var dataString = '&email=' + email + '&wasclicked=' + clicked;
+        console.log(clicked);
 
         function isValidEmail(emailAddress) {
             var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
             return pattern.test(emailAddress);
         };
 
-        if (isValidEmail(email) && (text.length > 100) && (name.length > 1)) {
+        if (isValidEmail(email))  {
             $.ajax({
                 type: "POST",
                 url: "ajax/process.php",
@@ -559,3 +390,4 @@ $('.magness-cta').click(function(){
 	$('#magness').toggleClass('open');
 }
 );
+});

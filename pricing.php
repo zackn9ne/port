@@ -11,13 +11,13 @@ include_once "layout_head.php";
 	<div class="texture-layer">
 	  <div class="container pricing-section">
 
-	    <div class="col-md-12 big-title light wow bounceIn">
+	    <div class="col-md-12 big-title dark wow presenter-row">
 	      <h2>How much does a good website cost?</h2>
+	      <h3>Three simple plans should cover everything you need! </h3>
 	    </div>
 
-	<div class="row">
-		<img src="img/Showcase-Template-Flat-Presentation-Vol-2_mine.png">
-	</div>
+
+
 
 
 <div class="row">
@@ -26,7 +26,7 @@ include_once "layout_head.php";
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft animated" style="visibility: visible;">
                                           <ul class="plan plan1">
                                                 <li class="plan-name">
-                                                      Blogger
+                                                      Blogger for Bloggers & Basic Sites
                                                 </li>
                                                 <li class="plan-price">
                                                       <strong>$1299</strong> / setup
@@ -104,7 +104,14 @@ col-xs-12">
 
                               </div>
 
+
+	<div class="row">
+		<img src="img/Showcase-Template-Flat-Presentation-Vol-2_mine.png">
+	</div>
+
 <div class="row cta-row">
+
+
                                               <a href="#" class="btn cta-major btn-2 
 btn-2c">Free, consultation for anyone (within reason), Get started today. </a>
 </div>

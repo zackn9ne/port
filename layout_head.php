@@ -76,6 +76,7 @@
 		      <ul class="nav navbar-nav navbar-right">
 			<li><a href="index">Home</a></li>
 			<li><a href="clients">Clients</a></li>
+			<li><a href="pricing">Pricing</a></li>
 			<li><a href="http://yo.hellozach.co" target="_blank">Support</a></li>
 			<li><a href="https://m.do.co/c/dc41b2580969" target="_blank">Hosting</a></li>
 

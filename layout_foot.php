@@ -4,40 +4,6 @@
       <div class="row text-center">
 	<div class="col-md-2"></div>
 
-	<div class="col-md-8">
-	  <form method="post" class="reply" id="contact" action="">
-	    <fieldset>
-	      <div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft">
-		  <div class="row">
-		    <div class="col-md-12">
-
-		      <input class="form-control" id="name" name="name" type="text" placeholder="Name" value="" required>
-		    </div>
-		    <div class="col-md-12">
-		      <input class="form-control" type="email" id="email" name="email" placeholder="Email" value="" required>
-		    </div>
-		  </div>
-		</div>
-
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInRight">
-		  <div class="row">
-		    <div class="col-md-12">
-		      <textarea class="form-control" id="text" name="text" rows="3" cols="40" placeholder="Your Message" required></textarea>
-		    </div>
-		  </div>
-		</div>
-	      </div>
-	      <div class="row">
-		<div class="col-md-12 wow fadeInUp">
-		  <button type="submit" class="btn btn-2 btn-2c">Send</button>
-		  <div class="success alert-success alert" style="display:none">Your message has been sent successfully.</div>
-		  <div class="error alert-danger alert" style="display:none">E-mail must be valid and message must be longer than 100 characters.</div>
-		</div>
-	      </div>
-	    </fieldset>
-	  </form>
-	</div>
 	</div>
 
 
@@ -74,10 +40,6 @@
 <script src="js/appear.js"></script>
 <script src="js/fappear.js"></script>  
 <script src="js/modernizr-2.6.2.min.js"></script>
-<script src="js/jquery.bxslider.min.js"></script>
-<script src="js/jquery.maximage.js"></script>
-<script src="js/jquery.cycle.all.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.sticky.js"></script>
 <script src="js/jquery.isotope.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
